@@ -1,0 +1,110 @@
+/*Подключение шрифта*/
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
+}
+
+/*Баннер*/
+.image .dragon img{
+  width: 71.875%; /*Ширина изображения в процентах*/
+  margin-top: 1.5%;
+  margin-left: 14.0625%;
+  margin-right: 14.0625%;
+  border-radius: 12px;
+}
+
+.price {
+  display: flex;  /*Внутри блока с фильтрами действуют правила flexbox*/
+  flex-wrap: nowrap;  /*Отключаем смещение блоков при изменении масштаба*/
+  width: 71.875%;
+  margin-left: 14.0625%;
+  margin-right: 14.0625%;
+}
+.left_from_filter
+{
+  flex: 4;  /*Отношение блока с товарами к блоку с фильтрами - 4 к 1*/
+  position: relative;
+}
+
+.filter-container {
+  flex: 1;
+  position: relative;
+  margin-top: 1.5%;
+}
+
+/*Фильтр*/
+.filter{
+  height: 666px;
+  width: 242px;
+  float: right;
+  background: #F2F2F2;
+  border-radius: 12px;
+}
+
+/* Кнопка выпадающего списка */
+.dropbotton {
+  height: 40px;
+  width: 216px;
+  font-family: Arial;
+  color: #4d4d4d;
+  font-weight: bold;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: 0.5px solid #000000;
+  position: relative ;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  background-color: #F2F2F2;
+}
+
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+  display: none;
+  width: 216px;
+  height: 40px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  position: relative ;
+  left: 12px;
+  top:15px;
+  border-radius: 12px;
+  background-color: #F2F2F2;
+}
+
+/*Элементы выпадающего списка*/
+.dropdown-content li{
+  width: 218px;
+  height: 40px;
+  list-style-type:none;
+  font-family: Arial;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+/* Показать выпадающее меню при наведении курсора */
+.filter:hover .dropdown-content {display: block;}
+
+.product_feed_1,.product_feed_2 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Блок-ленты с товарами*/
+.product_feed_3,.product_feed_4{
+  display: flex;  /*Блоки с товарами подчиняются правилам flexbox*/
+  flex-direction: row;  /*Карточки распологаются в одну линию*/
+  flex-wrap: wrap;
+  justify-content: space-between; /*Карточки равномерно распределяются по всей ширине*/
+  width: 71.875%;
+  margin-left: 14.0625%;
+  margin-right: 14.0625%;
+  border-radius: 12px;
+}

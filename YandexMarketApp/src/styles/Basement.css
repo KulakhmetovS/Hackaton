@@ -1,0 +1,58 @@
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
+}
+
+/*Подвал*/
+.basement{
+  position: absolute;
+}
+
+/*Однотонная часть подвала*/
+.basement_1{
+  margin-top: 5%;
+  width: 100%;
+  height: 355px;
+  background-color:#434343;
+
+}
+
+/*Чать подвала с надписями*/
+.basement_2{
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  background-color:#ffffff;
+}
+
+/*Надписи в подвале*/
+.user_agreement{
+  font: italic 13px "Inter";
+  line-height: 15.73px;
+  position: absolute;
+  top: 52px;
+  left: 7.96875%;
+}
+
+/*Надписи в подвале*/
+.copyright{
+  height: 36px;
+  font: bold 15px "Inter";
+  text-align: right;
+  position:absolute;
+  right: 15%;
+  top:40px;
+}
+
+/*Надписи в подвале*/
+.project{
+  height: 16px;
+  font: 13px "Inter";
+  text-align: right;
+  position:absolute;
+  right: 15%;
+  top:63px;
+}

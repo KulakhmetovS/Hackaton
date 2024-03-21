@@ -1,0 +1,194 @@
+/*Подключение шрифта*/
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:"slnt" 0;
+}
+
+/*Типы описания*/
+.types_description{
+  width: 1308px;
+  height: 27px;
+  border-radius: 8;
+  display: flex;
+  position: relative;
+  top: 24px;
+  margin: 0 auto;
+
+}
+
+.type{
+  width: 137px;
+  height: 27px;
+  background: #CDCDCD;
+  border-radius: 8px;
+  margin-right: 35.5px;
+}
+
+/*Основная информация о товаре*/
+.about_product{
+  width: 1308px;
+  height: 800px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: relative;
+  top: 48px;
+  border-right: 0px solid #ffffff;
+  padding-right: 24px;
+  margin: 0 auto;
+}
+
+.colum{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mini_pictures{
+  display: flex;
+  flex-direction: column;
+  margin-right: 7px;
+  border-radius: 12px;
+  justify-content: space-around
+}
+
+.mini_pictures img{
+  width: 115px;
+  border-radius: 8px;
+}
+
+.product_price{
+  width: 242px;
+  height: 160px;
+  background:#434343;
+  border-radius: 12px;
+}
+
+.mini_description_of_product{
+  width: 371px;
+  height: 800px;
+  background: #CDCDCD;
+  border-radius: 12px;
+}
+
+/*Большая картинка товара*/
+.image_of_product img{
+  width: 520px;
+  height: 496px;
+  border-radius: 12px;
+}
+
+/*маленькая картинка под ценой*/
+.dragon img{
+  width: 242px;
+  height: 93px;
+  border-radius: 12px;
+  margin-top: 7px;
+}
+/*Блок "может быть интересно"*/
+.interesting{
+  width: 1308px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+.product_feed{
+  display: flex;  /*Блоки с товарами подчиняются правилам flexbox*/
+  flex-direction: row;  /*Карточки распологаются в одну линию*/
+  flex-wrap: wrap;
+  justify-content: space-between; /*Карточки равномерно распределяются по всей ширине*/
+  width: 100%;
+}
+.may_be_interesting{
+  font: 32px "Inter";
+  font-weight: 600;
+  line-height: 38.73px;
+}
+.tovar {
+  width: 242px;
+  height: 321px;
+  border-radius: 12px;
+  position: relative;
+  border-right: 0px solid #ffffff;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.tovar img{
+  width: 242px;
+  height: 261px;
+  border-radius: 12px;
+}
+
+
+/*Имя товара*/
+.name_tovara{
+  width: 228px;
+  height: 31px;
+  font: 20px "Inter";
+  text-align: right;
+  font-weight: 600;
+  line-height: 24.2px;
+  position: relative;
+  bottom: 20px;
+}
+
+/*Цена товара*/
+.prices{
+  width: 75px;
+  height: 29px;
+  font: 24px "Inter";
+  text-align: right;
+  font-weight: 300;
+  line-height: 29px;
+  position:relative;
+  bottom: 65px;
+  left: 150px;
+}
+
+/*Полное описание товара*/
+.all_product_description{
+  width: 1308px;
+  height: 250px;
+  margin: 0 auto;
+  background: #CDCDCD;
+  margin-top: 60px;
+}
+/*Характеристики товара*/
+.product_characteristic{
+  width: 1308px;
+  height: 400px;
+  margin: 0 auto;
+  background: #434343;
+  margin-top: 24px;
+}
+/*Блок Отзывы*/
+.review{
+  width: 1308px;
+  height: 575px;
+  margin: 0 auto;
+  margin-top: 72px;
+}
+/*Оценки*/
+.grade{
+  width: 509px;
+  height: 100px;
+  border-radius: 12px;
+  border: 1px #000000 solid;
+  background-color: #ffffff;
+}
+/*Отзыв*/
+.all_review{
+  width: 1308px;
+  height: 451px;
+  background-color: #CDCDCD;
+  margin-top: 24px;
+}

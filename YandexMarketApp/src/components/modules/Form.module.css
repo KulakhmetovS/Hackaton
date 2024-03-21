@@ -1,0 +1,134 @@
+/*Подключение шрифта*/
+.inter-uniquifier {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+}
+
+/*Настройка фоновой картинки*/
+img.background{
+    min-height: 100%;
+    min-width: 640px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/*Настройка всего окна регистрации/входа*/
+.authorization{
+   background:#CDCDCD ;
+   width: 19.38%;
+   height: 45.56%;
+   position: absolute;
+   left:41.26% ;
+   right: 41.26%;
+   top:27.22% ;
+   bottom:27.22% ;
+   border-radius: 35px;
+}
+
+/*Кнопка войти*/
+.log_in{
+    width: 100%;
+    height: 23%;
+    left:12.03%;
+    right: 12.03%;
+    top:60.98%;
+    background:#ffffff;
+    border-radius:20px;
+    font: bold 18px "Inter";
+    border: none;
+}
+
+/*Кнопка зарегестрироваться*/
+.register{
+  width: 75.94%;
+   height: 12.2%;
+   position: absolute;
+   left:12.03% ;
+   top:79.27% ;
+   background:#CDCDCD ;
+   border-radius:20px;
+   border: 2px solid black;
+   font-weight: bold;
+   font-family: "Inter";
+
+}
+/*Поля ввода логин и пароль*/
+.login,.password{
+    background:#434343 ;
+    width: 100%;
+    height: 23%;
+    color:#CDCDCD;
+    border-radius: 20px;
+
+}
+/*Настройка надписей логин и пароль*/
+/*Здесь мы обращаемся к параметру placeholder, который добавляет подпись в поле формы*/
+input::placeholder{
+    font: bold 18px "Inter";
+    position: absolute;
+    margin-left: 12.68%;
+}
+/*Блок логин+пароль*/
+.data{
+    width: 75.94%;
+    height: 50%;
+    position: absolute;
+    left:12.03%;
+    right: 12.03%;
+    top:25.61%;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/*Блок-логотип(всё что белым фоном)*/
+.logos{
+    width: 41.18%;
+    height: 10.98%;
+    position: absolute;
+    left:29.41%;
+    right: 29.41%;
+    top:7.32%;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+/*Блок-логотип(только вектора)*/
+.log{
+    width: 75.97%;
+    height: 51.85%;
+    position: absolute;
+    left:12.01%;
+    right: 12.01%;
+    top:24.07%;
+    display:flex;
+    align-items: flex-end;
+}
+
+/*Блок Я+ндекс*/
+.Yandex{
+    width: 70.94%;
+    height: 89.29%;
+    display:flex;
+    align-items: flex-end;
+
+}
+
+/*Блок рамка+ID*/
+.ramid{
+    width: 23.07%;
+    height: 100%;
+}
+/*Настройка положения ID в рамку*/
+.id{
+    position: absolute;
+    left:53.07%;
+    top:22.77%;
+    bottom:22.77% ;
+}
