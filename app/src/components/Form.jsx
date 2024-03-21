@@ -1,7 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
+import axios from 'axios';
 import classes from './modules/Form.module.css';
 
 const Form = () => {
+
+  const [inputLogin, setLogin] = useState('');
+  const [inputPassword, setPassword] = useState('');
+
+  const SendToServer = (e) => {
+    e.preventDefault();
+    axios.post('https://jsonplaceholder.typicode.com/users', {
+      login: {inputLogin},
+      password: {inputPassword},
+    }).then(function(response){console.log(response.data)})
+  }
+
   return (
     <div className={classes.main}>
       <div className={classes.picture}>
@@ -10,9 +23,9 @@ const Form = () => {
         <div className={classes.Form}>
           <div className={classes.LoginText}>Вход в вашу учётую запись</div>
           <form className={classes.data}>
-            <input type="text" className={classes.login} placeholder="Почта/Логин" id={classes.inputLigin} />
-            <input type="text" className={classes.password} placeholder="Пароль" id={classes.inputPassword} />
-            <button className={classes.log_in}>Войти</button>
+            <input type="text" value={inputLogin} onChange={e => setLogin(e.target.value)} className={classes.login} placeholder="Почта/Логин" />
+            <input type="text" className={classes.password} value={inputPassword} onChange={e => setPassword(e.target.value)} placeholder="Пароль" />
+            <button className={classes.log_in} onClick={SendToServer}>Войти</button>
           </form>
           <button className={classes.register}>Зарегестрироваться</button>
         </div>
